@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/pt_name"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/image"
+        android:gravity="center|left"
+        android:text="Text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spe"
+        android:layout_width="150dp"
+        android:layout_height="29dp"
+        android:layout_below="@id/pt_name"
+        android:layout_alignBottom="@id/image"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/image"
+        android:text="Text"
+        android:textAlignment="viewStart"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/pt_name"
+        android:background="@drawable/mybutton"
+        android:text="BOOK"
+        android:textSize="10sp" />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_toRightOf="@id/btn"
+        android:text="DETAILS"
+        android:textSize="10sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mybutton"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

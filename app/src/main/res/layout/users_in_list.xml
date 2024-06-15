@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins"
+        android:text="Session with"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/usernameSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/sess"
+        android:fontFamily="@font/poppins"
+        android:text="mehdi"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/usernameSession"
+        android:fontFamily="@font/poppins"
+        android:text="at"
+         />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/at"
+        android:fontFamily="@font/poppins"
+        android:text="9:00 PM"
+         />
+
+
+</RelativeLayout>

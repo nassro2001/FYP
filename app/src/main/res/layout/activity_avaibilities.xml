@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AvailabilitiesActivity">
+
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="20dp"
+        android:text="Chose your sessions"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nbrSelected"
+        android:layout_width="15dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="10dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/nbrSess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/slash"
+        android:text="12" />
+
+    <ListView
+        android:id="@+id/listview_avaib"
+        android:layout_width="match_parent"
+        android:layout_height="576dp"
+        android:layout_below="@id/nbrSelected"
+        android:layout_marginTop="10dp"
+        android:choiceMode="multipleChoice" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listview_avaib"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"
+        android:text="BOOK SESSION" />
+
+    <Button
+        android:id="@+id/btnCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBook"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible"
+        android:background="@drawable/mybutton"
+        android:layout_marginStart="155dp"
+        android:text="CALENDAR" />
+
+    <TextView
+        android:id="@+id/slash"
+        android:layout_toRightOf="@id/nbrSelected"
+        android:layout_below="@+id/Title"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/" />
+
+</RelativeLayout>
